@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Safi Ahmad - 5th Semester BSCS Student & Web Development Intern Portfolio and Interactive CV.">
+  <meta name="theme-color" content="#0b0f19">
+  <title>Safi Ahmad &mdash; Web Development Portfolio</title>
+
+  <!-- Typography: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Cyber Lighting & Background Canvas Grid -->
+  <div class="bg-ambient-glow" aria-hidden="true"></div>
+  <div class="bg-cyber-grid" aria-hidden="true"></div>
+
+  <!-- FIXED TOP NAVIGATION HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-link" title="Safi Ahmad Portfolio">
+        <span class="brand-mono">[SA]</span>
+        <span class="brand-name">Safi Ahmad</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active" data-section="hero">Overview</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-ghost header-cv-btn" id="header-resume-cta">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Get Resume
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <a href="#hero" class="mobile-nav-link active" data-section="hero">Overview</a>
+    <a href="#about" class="mobile-nav-link" data-section="about">About Me</a>
+    <a href="#experience" class="mobile-nav-link" data-section="experience">Experience</a>
+    <a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a>
+    <a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a>
+  </div>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="main-content">
+    <div class="container" style="display: flex; flex-direction: column; gap: var(--space-xl); padding-bottom: var(--space-2xl);">
+
+      <!-- HERO SECTION -->
+      <section class="hero-section" id="hero">
+        <div class="hero-grid">
+
+          <!-- Left Column: Headline, Bio & Action Buttons -->
+          <div class="hero-content">
+            
+            <div class="status-beacon-badge">
+              <span class="radar-ping">
+                <span class="ping-outer"></span>
+                <span class="ping-core"></span>
+              </span>
+              <span class="beacon-text">Available for Opportunities &bull; 5th Semester BSCS</span>
+            </div>
+
+            <div>
+              <h1 class="hero-title">
+                Safi <span class="text-gradient-cyan">Ahmad</span>
+              </h1>
+              <p class="hero-subtitle">
+                BSCS 5th Semester Student &amp; Web Development Intern
+              </p>
+            </div>
+
+            <p class="hero-description">
+              Specializing in front-end architecture, responsive HTML5, modern CSS3, clean Vanilla JavaScript, and algorithmic problem solving with dedicated attention to performance.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#experience" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+                View Experience
+              </a>
+
+              <a href="#contact" class="btn btn-ghost">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                Get in Touch
+              </a>
+
+              <a href="#contact" class="btn btn-subtle" title="Download Full Resume" id="hero-download-cv">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download CV</span>
+              </a>
+            </div>
+
+            <div class="hero-metas">
+              <div class="meta-item">
+                <span class="meta-label">Location:</span>
+                <span class="meta-value">Pakistan</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Core Stack:</span>
+                <span class="meta-value">HTML5, CSS3, JavaScript, C++</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Developer Portrait Photo Frame -->
+          <div class="terminal-col">
+            <div class="glass-panel profile-photo-card">
+              <img src="profile.jpg" alt="Safi Ahmad" class="profile-img" loading="eager">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ABOUT ME SECTION -->
+      <section class="section-wrapper" id="about">
+        
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Left Column: Narrative Card -->
+          <div class="glass-panel about-card">
+            
+            <div class="about-text-block">
+              <h3 class="about-lead-title">
+                Synthesizing rigorous computer science principles with high-fidelity web execution.
+              </h3>
+
+              <p class="about-paragraph">
+                Currently progressing through my 5th semester of the Bachelor of Science in Computer Science (BSCS) program. I bridge foundational theory&mdash;data structures, algorithmic design patterns, computational complexity, and modular abstraction&mdash;with rapid, modern software deployment.
+              </p>
+
+              <p class="about-paragraph">
+                My engineering approach prioritizes lightweight execution: eliminating dependency bloat, crafting responsive grid layouts natively via CSS Flexbox and Grid, and harnessing pure Vanilla JavaScript to maintain high rendering performance and zero layout thrash.
+              </p>
+            </div>
+
+            <!-- Bento Highlights Mini-Boxes -->
+            <div class="about-highlights">
+              <div class="highlight-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <div>
+                  <h4 class="highlight-title">Data Structures &amp; Algorithms</h4>
+                  <p class="highlight-desc">Optimized time complexity, memory efficiency, and clean algorithmic problem-solving.</p>
+                </div>
+              </div>
+
+              <div class="highlight-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+                <div>
+                  <h4 class="highlight-title">Performance-First Front-End</h4>
+                  <p class="highlight-desc">Pure DOM event delegation, minimal repaint cycles, and cross-browser resilience.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Bento Stat Cards -->
+          <div class="about-stats-col">
+            
+            <!-- Stat Card 1: Degree Progression -->
+            <div class="glass-panel bento-stat-card stat-cyan">
+              <div class="stat-info">
+                <span class="stat-tag">Degree Progression</span>
+                <span class="stat-value">5th Semester</span>
+                <span class="stat-subtext">BS Computer Science &bull; Solid Academic Standing</span>
+              </div>
+              <div class="stat-icon-wrapper">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Stat Card 2: Industry Experience -->
+            <div class="glass-panel bento-stat-card stat-blue">
+              <div class="stat-info">
+                <span class="stat-tag">Industry Experience</span>
+                <span class="stat-value" style="font-size: 1.55rem;">Coding Pixel</span>
+                <span class="stat-subtext">Web Development Intern &bull; Production Codebases</span>
+              </div>
+              <div class="stat-icon-wrapper">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Stat Card 3: Language Fluency -->
+            <div class="glass-panel bento-stat-card stat-purple">
+              <div class="stat-info">
+                <span class="stat-tag">Language Fluency</span>
+                <span class="stat-value">5+ Languages</span>
+                <span class="stat-subtext">C++, Java, Python, SQL, JavaScript</span>
+              </div>
+              <div class="stat-icon-wrapper">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- EXPERIENCE SECTION -->
+      <section class="section-wrapper" id="experience">
+        
+        <div class="section-header">
+          <h2 class="section-title">Experience</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline-container">
+          
+          <div class="timeline-spine"></div>
+
+          <!-- Timeline Item 1: Coding Pixel Internship -->
+          <div class="timeline-item">
+            
+            <div class="timeline-node">
+              <div class="timeline-node-inner"></div>
+            </div>
+
+            <div class="glass-panel timeline-card">
+              
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="role-title">Web Development Intern</h3>
+                  <p class="role-company">Coding Pixel &mdash; Software Agency &amp; Digital Solutions</p>
+                </div>
+
+                <div class="role-badge-group">
+                  <span class="badge-status">Present</span>
+                  <span class="badge-caption">Internship</span>
+                </div>
+              </div>
+
+              <!-- Responsibilities Bullet Points -->
+              <ul class="responsibilities-list">
+                <li class="responsibility-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                  <span>Designed, scaffolded, and deployed clean, fully responsive front-end web layouts adhering to modern UI/UX accessibility standards across mobile, tablet, and widescreen viewports.</span>
+                </li>
+
+                <li class="responsibility-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                  <span>Engineered high-performance interactive modules using pure semantic HTML5, modern CSS3 layout paradigms (Grid and Flexbox), and robust DOM manipulation via Vanilla JavaScript.</span>
+                </li>
+
+                <li class="responsibility-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                  <span>Collaborated directly with senior developers and creative leads on real-world client deliverables, cross-browser compatibility verification, and peer code reviews.</span>
+                </li>
+
+                <li class="responsibility-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                  <span>Refactored legacy presentation logic into maintainable modular CSS structures, decreasing style bloat and speeding up First Contentful Paint metrics.</span>
+                </li>
+              </ul>
+
+              <!-- Tech Badges -->
+              <div class="tags-cloud">
+                <span class="tag-pill">HTML5</span>
+                <span class="tag-pill">CSS3</span>
+                <span class="tag-pill">JavaScript</span>
+                <span class="tag-pill">Responsive Design</span>
+                <span class="tag-pill">DOM APIs</span>
+                <span class="tag-pill">Git &amp; GitHub</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Academic Program Milestones -->
+          <div class="timeline-item academic">
+            
+            <div class="timeline-node">
+              <div class="timeline-node-inner"></div>
+            </div>
+
+            <div class="glass-panel timeline-card">
+              
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="role-title">Computer Science Degree Program</h3>
+                  <p class="role-company">5th Semester Undergraduate Studies</p>
+                </div>
+
+                <div class="role-badge-group">
+                  <span class="badge-status" style="background: rgba(80, 142, 255, 0.12); color: var(--secondary-dim); border-color: rgba(80, 142, 255, 0.3);">2022 &ndash; Present</span>
+                  <span class="badge-caption">Undergraduate</span>
+                </div>
+              </div>
+
+              <p class="about-paragraph" style="margin-bottom: var(--space-md);">
+                Conducted intensive coursework and lab projects implementing complex data structures (Trees, Hash Tables, Graphs), algorithm analysis, multi-threaded concepts in C++, relational database normalization, and full-stack integration prototypes.
+              </p>
+
+              <!-- Academic Stack Tags -->
+              <div class="tags-cloud">
+                <span class="tag-pill blue">Data Structures</span>
+                <span class="tag-pill blue">Object-Oriented Programming</span>
+                <span class="tag-pill blue">SQL Databases</span>
+                <span class="tag-pill blue">Systems Design</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- TECHNICAL SKILLS SECTION -->
+      <section class="section-wrapper" id="skills">
+        
+        <div class="section-header">
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="skills-filter-wrapper" role="tablist">
+          <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">
+            All Skills
+          </button>
+          <button class="filter-tab" data-filter="languages" role="tab" aria-selected="false">
+            Languages
+          </button>
+          <button class="filter-tab" data-filter="web" role="tab" aria-selected="false">
+            Web Technologies
+          </button>
+          <button class="filter-tab" data-filter="core" role="tab" aria-selected="false">
+            Tools &amp; Fundamentals
+          </button>
+        </div>
+
+        <!-- 3-Column Skills Grid -->
+        <div class="skills-grid" id="skills-grid">
+          
+          <!-- SKILL CARD 1: Programming Languages -->
+          <div class="glass-panel skill-card" data-category="languages">
+            
+            <div class="skill-card-top">
+              <div class="skill-card-head">
+                <h3 class="skill-card-title">Programming Languages</h3>
+                <svg class="skill-card-icon" style="color: var(--primary);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+
+              <p class="skill-card-desc">Strong algorithmic foundations in compiled and interpreted languages.</p>
+
+              <!-- Skill Meters -->
+              <div class="skill-bars-list">
+                
+                <div class="skill-bar-item">
+                  <div class="bar-meta">
+                    <span class="bar-name">JavaScript (ES6+)</span>
+                    <span class="bar-level" style="color: var(--primary);">Advanced</span>
+                  </div>
+                  <div class="bar-track">
+                    <div class="bar-fill cyan" style="width: 90%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-item">
+                  <div class="bar-meta">
+                    <span class="bar-name">C++</span>
+                    <span class="bar-level" style="color: var(--primary);">Proficient</span>
+                  </div>
+                  <div class="bar-track">
+                    <div class="bar-fill cyan" style="width: 85%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-item">
+                  <div class="bar-meta">
+                    <span class="bar-name">Java</span>
+                    <span class="bar-level" style="color: var(--secondary);">Competent</span>
+                  </div>
+                  <div class="bar-track">
+                    <div class="bar-fill blue" style="width: 78%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-item">
+                  <div class="bar-meta">
+                    <span class="bar-name">Python</span>
+                    <span class="bar-level" style="color: var(--secondary);">Competent</span>
+                  </div>
+                  <div class="bar-track">
+                    <div class="bar-fill blue" style="width: 75%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-item">
+                  <div class="bar-meta">
+                    <span class="bar-name">SQL</span>
+                    <span class="bar-level" style="color: var(--tertiary);">Solid</span>
+                  </div>
+                  <div class="bar-track">
+                    <div class="bar-fill purple" style="width: 80%;"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card Bottom Chips -->
+            <div class="skill-card-footer">
+              <span class="chip-mini">Object-Oriented Programming</span>
+              <span class="chip-mini">Memory Management</span>
+              <span class="chip-mini">Asynchronous JS</span>
+            </div>
+
+          </div>
+
+          <!-- SKILL CARD 2: Web Technologies & Layout -->
+          <div class="glass-panel skill-card" data-category="web">
+            
+            <div class="skill-card-top">
+              <div class="skill-card-head">
+                <h3 class="skill-card-title">Web Technologies</h3>
+                <svg class="skill-card-icon" style="color: var(--secondary);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+
+              <p class="skill-card-desc">Lightweight semantic markup and fluid responsive interfaces.</p>
+
+              <!-- Web Rows -->
+              <div class="skill-rows-list">
+                
+                <div class="skill-row-item">
+                  <span class="skill-row-name">Semantic HTML5 &amp; Accessibility</span>
+                </div>
+
+                <div class="skill-row-item">
+                  <span class="skill-row-name">Modern CSS3 (Grid &amp; Flexbox)</span>
+                </div>
+
+                <div class="skill-row-item">
+                  <span class="skill-row-name">Native DOM Event Manipulation</span>
+                </div>
+
+                <div class="skill-row-item">
+                  <span class="skill-row-name">Fluid Responsive Architecture</span>
+                </div>
+
+                <div class="skill-row-item">
+                  <span class="skill-row-name">Cross-Browser Optimization</span>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card Bottom Chips -->
+            <div class="skill-card-footer">
+              <span class="chip-mini">Responsive UI</span>
+              <span class="chip-mini">CSS Architecture</span>
+              <span class="chip-mini">Web Standards</span>
+            </div>
+
+          </div>
+
+          <!-- SKILL CARD 3: Tools & Fundamentals -->
+          <div class="glass-panel skill-card" data-category="core">
+            
+            <div class="skill-card-top">
+              <div class="skill-card-head">
+                <h3 class="skill-card-title">Tools &amp; Fundamentals</h3>
+                <svg class="skill-card-icon" style="color: var(--tertiary);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+              </div>
+
+              <p class="skill-card-desc">Computer Science fundamentals paired with modern developer tooling.</p>
+
+              <!-- Detailed Items -->
+              <div class="skill-detailed-list">
+                
+                <div class="skill-detailed-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+                  <div>
+                    <div class="detailed-main">Data Structures &amp; Algorithms</div>
+                    <div class="detailed-sub">Trees, Graphs, Recursion, Time Complexity Analysis</div>
+                  </div>
+                </div>
+
+                <div class="skill-detailed-item">
+                  <svg width="18" height="18" style="color: var(--secondary);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                  </svg>
+                  <div>
+                    <div class="detailed-main">Relational Database Systems</div>
+                    <div class="detailed-sub">Schema Normalization, SQL Queries &amp; Constraints</div>
+                  </div>
+                </div>
+
+                <div class="skill-detailed-item">
+                  <svg width="18" height="18" style="color: var(--tertiary);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="4 17 10 11 4 5"></polyline>
+                    <line x1="12" y1="19" x2="20" y2="19"></line>
+                  </svg>
+                  <div>
+                    <div class="detailed-main">Git &amp; GitHub</div>
+                    <div class="detailed-sub">Branching Strategy, PR Workflows, Code Reviews</div>
+                  </div>
+                </div>
+
+                <div class="skill-detailed-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                    <path d="M2 2l7.586 7.586"></path>
+                    <circle cx="11" cy="11" r="2"></circle>
+                  </svg>
+                  <div>
+                    <div class="detailed-main">UI/UX Layout &amp; Prototyping</div>
+                    <div class="detailed-sub">Wireframing, Spatial Grids, Component Reusability</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card Bottom Chips -->
+            <div class="skill-card-footer">
+              <span class="chip-mini">Git</span>
+              <span class="chip-mini">VS Code</span>
+              <span class="chip-mini">DevTools</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="section-wrapper" id="contact">
+        
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Left Column: Communication Beacons & Availability -->
+          <div class="contact-info-col">
+            
+            <div class="glass-panel contact-info-card">
+              
+              <div>
+                <h3 class="contact-intro-title">Initiate Collaboration</h3>
+                <p class="contact-intro-desc">
+                  Currently open to Software Engineering internships, junior front-end developer roles, and web opportunities. Let's build something extraordinary together.
+                </p>
+              </div>
+
+              <!-- Direct Email Card with One-Click Copy -->
+              <div class="email-direct-box">
+                <span class="email-label">Email Address</span>
+                <div class="email-action-row">
+                  <a href="mailto:safiahmad.dev@gmail.com" class="email-link" id="email-address-text">
+                    safiahmad.dev@gmail.com
+                  </a>
+                  <button class="btn-copy" id="btn-copy-email" title="Copy email address to clipboard">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span id="copy-text">Copy</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Social Channels Grid -->
+              <div class="social-channels-group">
+                <span class="social-channels-label">Connect With Me</span>
+                <div class="social-grid">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="#hero" class="social-btn">
+                    <span>Portfolio</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Hiring Availability Status Card -->
+              <div class="availability-banner">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <div>
+                  <div class="avail-title">Open for Opportunities</div>
+                  <div class="avail-text">
+                    Available for front-end development and software engineering roles.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Right Column: Clean Interactive Form -->
+          <div class="contact-form-col">
+            <div class="glass-panel contact-form-card">
+              
+              <div class="form-header-group">
+                <h3 class="form-title">Send a Message</h3>
+                <p class="form-caption">Feel free to reach out for inquiries or opportunities</p>
+              </div>
+
+              <form class="contact-form" id="portfolio-contact-form">
+                
+                <div class="form-row">
+                  <div class="form-field">
+                    <label class="form-label" for="user-name">Your Name *</label>
+                    <input type="text" id="user-name" class="form-input" placeholder="e.g. Alex Vance" required>
+                  </div>
+
+                  <div class="form-field">
+                    <label class="form-label" for="user-email">Your Email *</label>
+                    <input type="email" id="user-email" class="form-input" placeholder="e.g. alex@example.com" required>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="msg-subject">Subject</label>
+                  <input type="text" id="msg-subject" class="form-input" placeholder="Project Inquiry / Job Opportunity">
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="msg-body">Your Message *</label>
+                  <textarea id="msg-body" class="form-textarea" placeholder="Describe your team, timeline, or opportunity..." required></textarea>
+                </div>
+
+                <div class="form-submit-row">
+                  <button type="submit" class="btn btn-primary" id="btn-submit-message">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="22" y1="2" x2="11" y2="13"></line>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                    <span id="submit-button-text">Send Message</span>
+                  </button>
+
+                  <div class="form-feedback" id="form-success-toast">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Your message has been sent successfully.</span>
+                  </div>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Bio & Identity -->
+        <div class="footer-brand-col">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <span class="brand-mono">[SA]</span>
+            <span style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary);">Safi Ahmad</span>
+          </div>
+
+          <p class="footer-bio">
+            BSCS Undergraduate &amp; Front-End Developer. Engineering responsive digital experiences, performant DOM architectures, and clean software solutions.
+          </p>
+        </div>
+
+        <!-- Directory Links -->
+        <div class="footer-nav-col">
+          <span class="footer-col-title">Navigation</span>
+          <div class="footer-links-list">
+            <a href="#hero" class="footer-link">Overview</a>
+            <a href="#about" class="footer-link">About</a>
+            <a href="#experience" class="footer-link">Experience</a>
+            <a href="#skills" class="footer-link">Skills</a>
+            <a href="#contact" class="footer-link">Contact</a>
+          </div>
+        </div>
+
+        <!-- Connect Links -->
+        <div class="footer-nav-col">
+          <span class="footer-col-title">Connect</span>
+          <div class="footer-links-list">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+            <a href="mailto:safiahmad.dev@gmail.com" class="footer-link">safiahmad.dev@gmail.com</a>
+            <a href="#contact" class="footer-link">Download Resume</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 Safi Ahmad. All rights reserved.</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- External Vanilla JavaScript Controller -->
+  <script src="script.js"></script>
+
+</body>
+</html>
